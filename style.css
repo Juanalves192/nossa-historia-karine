@@ -1,33 +1,42 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juan ❤️ Karine</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <h1>Juan 💖 Karine</h1>
-    <p id="typing"></p>
+body {
+  background-color: #fff0f5;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
 
-    <div class="timeline">
-      <div class="event"><strong>2022:</strong> Nos conhecemos na faculdade... e meu coração nunca mais foi o mesmo.</div>
-      <div class="event"><strong>Entre 2022 e 2025:</strong> Tivemos altos e baixos, algumas brigas... mas nunca deixamos de nos falar.</div>
-      <div class="event"><strong>25/05/2025:</strong> Começamos a namorar oficialmente — um dia antes do aniversário mais importante da minha vida.</div>
-    </div>
+h1 {
+  color: #d63384;
+  margin-top: 30px;
+}
 
-    <div class="final-message">
-      💍 Karine, você é o amor da minha vida.  
-      Eu quero passar o resto da minha vida com você.  
-      Um dia... eu ainda vou te pedir em casamento de verdade.
-    </div>
+p {
+  font-size: 18px;
+  color: #333;
+}
 
-    <button onclick="mostrarAmor()">Te amo ❤️</button>
-    <div id="surpresa"></div>
-  </div>
+button {
+  padding: 10px 20px;
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
 
-  <canvas id="hearts"></canvas>
-  <script src="script.js"></script>
-</body>
-</html>
+button:hover {
+  background-color: #ff85c1;
+}
+
+canvas#hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
