@@ -20,7 +20,8 @@ function mostrarMensagem() {
   document.getElementById("fotoKarine").style.display = "block";
 
   // Tocar a música
-  document.getElementById("musica").play();
+  const musica = document.getElementById("musica");
+  musica.play();
 }
 
 // Animação de corações
@@ -77,4 +78,5 @@ function animate() {
 }
 
 animate();
+
 
