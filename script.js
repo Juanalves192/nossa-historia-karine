@@ -1,30 +1,3 @@
-const texto = "Essa é a nossa história, Karine. E ela só está começando...";
-let i = 0;
-const velocidade = 60;
-
-function digitar() {
-  if (i < texto.length) {
-    document.getElementById("typing").innerHTML += texto.charAt(i);
-    i++;
-    setTimeout(digitar, velocidade);
-  }
-}
-
-digitar();
-
-function mostrarMensagem() {
-  // Mostrar mensagem extra
-  document.getElementById("mensagem").innerText = "Você é tudo pra mim, Karine 💖";
-
-  // Mostrar a foto
-  document.getElementById("fotoKarine").style.display = "block";
-
-  // Tocar a música
-  const musica = document.getElementById("musica");
-  musica.play();
-}
-
-// Animação de corações
 const canvas = document.getElementById("hearts");
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
@@ -63,7 +36,12 @@ function Heart(x, y, size, speed) {
 function animate() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   if (Math.random() < 0.1) {
-    hearts.push(new Heart(Math.random() * canvas.width, canvas.height, 10 + Math.random() * 10, 1 + Math.random() * 2));
+    hearts.push(new Heart(
+      Math.random() * canvas.width,
+      canvas.height,
+      10 + Math.random() * 10,
+      1 + Math.random() * 2
+    ));
   }
 
   for (let i = hearts.length - 1; i >= 0; i--) {
@@ -79,4 +57,12 @@ function animate() {
 
 animate();
 
+function mostrarMensagem() {
+  document.getElementById("mensagem").innerText = "Você é tudo pra mim, Karine 💖";
+  document.getElementById("fotoKarine").style.display = "block";
 
+  const musica = document.getElementById("musica");
+  if (musica) musica.play().catch((e) => {
+    console.warn("Música não pôde ser reproduzida automaticamente.");
+  });
+}
