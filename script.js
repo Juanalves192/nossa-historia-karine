@@ -59,10 +59,13 @@ animate();
 
 function mostrarMensagem() {
   document.getElementById("mensagem").innerText = "Você é tudo pra mim, Karine 💖";
+
+  // Mostra a imagem
   document.getElementById("fotoKarine").style.display = "block";
 
+  // Toca a música
   const musica = document.getElementById("musica");
-  if (musica) musica.play().catch((e) => {
-    console.warn("Música não pôde ser reproduzida automaticamente.");
+  musica.play().catch(() => {
+    console.log("Navegador bloqueou autoplay, interação necessária.");
   });
 }
