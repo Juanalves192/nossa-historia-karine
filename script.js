@@ -12,9 +12,15 @@ function digitar() {
 
 digitar();
 
-function mostrarAmor() {
-  const div = document.getElementById("surpresa");
-  div.innerHTML = "💖 Eu te amo, Karine. Pra sempre.";
+function mostrarMensagem() {
+  // Mostrar mensagem extra
+  document.getElementById("mensagem").innerText = "Você é tudo pra mim, Karine 💖";
+
+  // Mostrar a foto
+  document.getElementById("fotoKarine").style.display = "block";
+
+  // Tocar a música
+  document.getElementById("musica").play();
 }
 
 // Animação de corações
@@ -71,3 +77,4 @@ function animate() {
 }
 
 animate();
+
