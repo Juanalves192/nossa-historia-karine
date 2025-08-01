@@ -1,36 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Karine, nossa história 💖</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5;
+      text-align: center;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #e91e63;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    button {
+      background-color: #e91e63;
+      color: white;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #c2185b;
+    }
+
+    #fotoKarine {
+      max-width: 80%;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
 </head>
 <body>
+
   <canvas id="hearts"></canvas>
 
-  <div class="container">
-    <h1>Karine Seixas, essa mensagem é para você 💌</h1>
-    <p>Nos conhecemos na faculdade em 2022, e desde então, minha vida mudou.</p>
-    <p>Mesmo com altos e baixos, nunca deixamos de nos falar.</p>
-    <p>No dia 25/05/2025 começamos oficialmente nosso namoro. Um dia antes do seu aniversário — porque você é o meu melhor presente.</p>
-    <p>Karine, eu te amo. E quero casar com você. 💍</p>
+  <h1>Karine Seixas, essa mensagem é para você 💌</h1>
 
-    <button onclick="mostrarMensagem()">Clique aqui</button>
+  <p id="typing"></p>
 
-    <p id="mensagem" style="margin-top: 20px;"></p>
+  <p>Nos conhecemos na faculdade em 2022, e desde então, minha vida mudou.</p>
+  <p>Mesmo com altos e baixos, nunca deixamos de nos falar.</p>
+  <p>No dia 25/05/2025 começamos oficialmente nosso namoro. Um dia antes do seu aniversário — porque você é o meu melhor presente.</p>
+  <p>Karine, eu te amo. E quero casar com você. 💍</p>
 
-    <!-- Foto escondida por padrão -->
+  <button onclick="mostrarMensagem()">Clique aqui</button>
+
+  <p id="mensagem"></p>
+
+  <img 
     <img 
-      id="fotoKarine" 
-      src="foto.jpg" 
-      style="display: none; margin-top: 20px; max-width: 300px; width: 100%; display: block; margin-left: auto; margin-right: auto; border-radius: 20px;" 
-    />
-
-    <!-- Música escondida (toca automaticamente após clique) -->
-    <audio id="musica" src="musica.mp3"></audio>
-  </div>
+  id="fotoKarine" 
+  src="foto.jpg" 
+  style="display: none; margin-top: 20px; max-width: 300px; width: 100%; display: block; margin-left: auto; margin-right: auto; border-radius: 20px;" 
+/>
+  <audio id="musica" src="musica.mp3"></audio>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
