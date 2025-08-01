@@ -8,28 +8,27 @@
 <body>
   <canvas id="hearts"></canvas>
 
-  <h1>Karine Seixas, essa mensagem é para você 💌</h1>
-  
-  <p id="typing"></p>
+  <div class="container">
+    <h1>Karine Seixas, essa mensagem é para você 💌</h1>
+    <p>Nos conhecemos na faculdade em 2022, e desde então, minha vida mudou.</p>
+    <p>Mesmo com altos e baixos, nunca deixamos de nos falar.</p>
+    <p>No dia 25/05/2025 começamos oficialmente nosso namoro. Um dia antes do seu aniversário — porque você é o meu melhor presente.</p>
+    <p>Karine, eu te amo. E quero casar com você. 💍</p>
 
-  <p>Nos conhecemos na faculdade em 2022, e desde então, minha vida mudou.</p>
-  <p>Mesmo com altos e baixos, nunca deixamos de nos falar.</p>
-  <p>No dia 25/05/2025 começamos oficialmente nosso namoro. Um dia antes do seu aniversário — porque você é o meu melhor presente.</p>
-  <p>Karine, eu te amo. E quero casar com você. 💍</p>
+    <button onclick="mostrarMensagem()">Clique aqui</button>
 
-  <button onclick="mostrarMensagem()">Clique aqui</button>
+    <p id="mensagem" style="margin-top: 20px;"></p>
 
-  <p id="mensagem" style="margin-top: 20px;"></p>
+    <!-- Foto escondida por padrão -->
+    <img 
+      id="fotoKarine" 
+      src="foto.jpg" 
+      style="display: none; margin-top: 20px; max-width: 300px; width: 100%; display: block; margin-left: auto; margin-right: auto; border-radius: 20px;" 
+    />
 
-  <!-- Foto oculta por padrão -->
-  <img 
-    id="fotoKarine" 
-    src="foto.jpg" 
-    style="display: none; margin-top: 20px; max-width: 300px; width: 100%; display: block; margin-left: auto; margin-right: auto; border-radius: 20px;" 
-  />
-
-  <!-- Música oculta por padrão -->
-  <audio id="musica" src="musica.mp3"></audio>
+    <!-- Música escondida (toca automaticamente após clique) -->
+    <audio id="musica" src="musica.mp3"></audio>
+  </div>
 
   <script src="script.js"></script>
 </body>
