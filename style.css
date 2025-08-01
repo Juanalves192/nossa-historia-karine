@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan ❤️ Karine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Juan 💖 Karine</h1>
+    <p id="typing"></p>
+
+    <div class="timeline">
+      <div class="event"><strong>2022:</strong> Nos conhecemos na faculdade... e meu coração nunca mais foi o mesmo.</div>
+      <div class="event"><strong>Entre 2022 e 2025:</strong> Tivemos altos e baixos, algumas brigas... mas nunca deixamos de nos falar.</div>
+      <div class="event"><strong>25/05/2025:</strong> Começamos a namorar oficialmente — um dia antes do aniversário mais importante da minha vida.</div>
+    </div>
+
+    <div class="final-message">
+      💍 Karine, você é o amor da minha vida.  
+      Eu quero passar o resto da minha vida com você.  
+      Um dia... eu ainda vou te pedir em casamento de verdade.
+    </div>
+
+    <button onclick="mostrarAmor()">Te amo ❤️</button>
+    <div id="surpresa"></div>
+  </div>
+
+  <canvas id="hearts"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
