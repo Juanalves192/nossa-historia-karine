@@ -1,35 +1,32 @@
 body {
-  background-color: #fff0f5;
-  font-family: 'Arial', sans-serif;
-  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff0f5;
+  color: #333;
   margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
   padding: 20px;
 }
 
-h1 {
-  color: #d63384;
-  margin-top: 30px;
-}
-
-p {
-  font-size: 18px;
-  color: #333;
-}
-
 button {
-  padding: 10px 20px;
-  background-color: #ff69b4;
-  border: none;
+  background-color: #ff4d6d;
   color: white;
+  border: none;
+  padding: 10px 20px;
   font-size: 16px;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
   margin-top: 20px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #ff85c1;
+  background-color: #e60039;
 }
 
 canvas#hearts {
